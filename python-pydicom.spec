@@ -38,7 +38,7 @@ data cannot easily be modified.
 %license LICENSE
 %doc README.md
 %{_bindir}/pydicom
-%{py_sitedir}/%{module}*
+%{py_sitedir}/%{module}
 %{py_sitedir}/%{module}-%{version}-py%{python_version}.egg-info/
 
 #-----------------------------------------------------------------------

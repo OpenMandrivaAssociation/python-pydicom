@@ -3,7 +3,7 @@
 
 Summary:	Read, modify and write DICOM files with python code
 Name:		python-%{module}
-Version:	2.3.0
+Version:	2.3.1
 Release:	1
 Group:          Development/Python
 # There are generated data (private dict) in special format from GDCM
@@ -39,7 +39,7 @@ data cannot easily be modified.
 %doc README.md
 %{_bindir}/pydicom
 %{py_sitedir}/%{module}
-%{py_sitedir}/%{module}-%{version}-py%{python_version}.egg-info/
+%{py_sitedir}/%{module}-%{version}-py%{python_version}.*-info/
 
 #-----------------------------------------------------------------------
 

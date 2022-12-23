@@ -1,16 +1,16 @@
 %global module pydicom
-%global mod %(m=%{module}; echo ${m:0:1})
+%global mod %(m=pydicom; echo ${m:0:1})
 
 Summary:	Read, modify and write DICOM files with python code
-Name:		python-%{module}
+Name:		python-pydicom
 Version:	2.3.1
 Release:	1
 Group:          Development/Python
 # There are generated data (private dict) in special format from GDCM
 License:	MIT and BSD
-URL:		https://github.com/darcymason/%{module}
-Source0:	https://github.com/pydicom/pydicom/archive/refs/tags/v%{version}/%{module}-%{version}.tar.gz
-#Source0:	https://pypi.io/packages/source/%{mod}/%{module}/%{module}-%{version}.tar.gz
+URL:		https://github.com/darcymason/pydicom
+Source0:	https://github.com/pydicom/pydicom/archive/refs/tags/v%{version}/pydicom-%{version}.tar.gz
+#Source0:	https://pypi.io/packages/source/p/pydicom/pydicom-%{version}.tar.gz
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python3dist(setuptools)
 BuildRequires:	python3dist(six)
@@ -38,13 +38,13 @@ data cannot easily be modified.
 %license LICENSE
 %doc README.md
 %{_bindir}/pydicom
-%{py_sitedir}/%{module}
-%{py_sitedir}/%{module}-%{version}-py%{python_version}.*-info/
+%{py_sitedir}/pydicom
+%{py_sitedir}/pydicom-%{version}-py%{python_version}.*-info/
 
 #-----------------------------------------------------------------------
 
 %prep
-%autosetup -n %{module}-%{version}
+%autosetup -n pydicom-%{version}
 
 %build
 %py_build

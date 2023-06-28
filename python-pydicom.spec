@@ -39,7 +39,7 @@ data cannot easily be modified.
 %doc README.md
 %{_bindir}/pydicom
 %{py_sitedir}/pydicom
-%{py_sitedir}/pydicom-%{version}-py%{python_version}.*-info/
+%{py_sitedir}/pydicom-*-info/
 
 #-----------------------------------------------------------------------
 

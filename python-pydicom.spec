@@ -3,7 +3,7 @@
 
 Summary:	Read, modify and write DICOM files with python code
 Name:		python-pydicom
-Version:	2.4.1
+Version:	2.4.3
 Release:	1
 Group:          Development/Python
 # There are generated data (private dict) in special format from GDCM

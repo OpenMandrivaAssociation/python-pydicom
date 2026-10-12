@@ -10,14 +10,10 @@ Group:          Development/Python
 License:	MIT and BSD
 URL:		https://github.com/darcymason/pydicom
 Source0:	https://github.com/pydicom/pydicom/archive/refs/tags/v%{version}/pydicom-%{version}.tar.gz
-#Source0:	https://pypi.io/packages/source/p/pydicom/pydicom-%{version}.tar.gz
-BuildRequires:	pkgconfig(python3)
-BuildRequires:	python3dist(setuptools)
-BuildRequires:	python3dist(six)
-# test
-BuildRequires:	python3dist(numpy)
-BuildRequires:	python3dist(pytest)
-BuildRequires:	python3dist(python-dateutil)
+# The PyPI sdist is equivalent; the GitHub tag archive is what we ship.
+BuildRequires:	pkgconfig(python)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
 
 BuildArch:	noarch
 
